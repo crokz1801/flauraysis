@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% block pagetitle %}
+Plant Disease Detection
+{% endblock pagetitle %}
+{% block body %}
+<style>
+  body{
+    overflow-x: hidden;
+  }
+  @media only screen and (max-width: 830px) {
+    .laptop{
+      display: none;
+    }
+  }
+  @media (min-width:830px) and (max-width: 1536px){
+    .mobile{
+      display: none;
+    }
+  }
+</style>
+<div class='mobile p-5'>
+  <div class="row mb-5 text-center text-white">
+    <div class="col-lg-10 mx-auto">
+      <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color:red;"><b>Note✍🏻</b></h1>
+      <p class="lead" style="font-weight: 500;color: black;">Please🙏 Open This Site On Laptop/PC 💻 Screen Only</p>
+      <p class="lead" style="font-weight: 500;color: black;">Thank You 🤝</p>    
+    </div>
+</div>
+</div>
+
+<div class="row mb-5 text-center text-white laptop">
+    <div class="col-lg-10 mx-auto">
+        <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color: rgb(255, 255, 255);"><b>🍁Plant Disease
+                Detection🍁 </b></h1>
+        <p class="lead" style="font-weight: 500;color: rgb(255, 255, 255);">This AI Engine Will Help To Detect Disease From Following Fruites And Veggies</p>
+    </div>
+</div>
+
+<center class="laptop">
+    <a href="/index">
+    <button class = "bttn-pill bttn-lg btn-success"><b style="color: black;">Flauralysis</b></button>
+</a>
+</center>
+<div class="row p-5 laptop">
+    <div class=" col">
+        <div class="p-3 shadow rounded-lg" style="width: 90%;height: 92%; background-color: #bdbdbdb3;">
+          <img src="{{url_for('static', filename='/images/apple.webp')}} " width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Apple</p></center>
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-3 shadow rounded-lg" style="width: 90%;height: 92%; background-color: #bdbdbdb3;">
+
+          <img src="{{url_for('static', filename='/images/blueberries.png')}} " width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Blueberry</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 shadow rounded-lg" style="width: 90%;height: 92%; background-color: #bdbdbdb3;">
+
+          <img src="{{url_for('static', filename='/images/cherry.webp')}} " width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Cherry</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 shadow rounded-lg" style="width: 90%;height: 92%; background-color: #bdbdbdb3;">
+
+          <img src="{{url_for('static', filename='/images/corn.jpg')}} " width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Corn</p></center>
+        </div>
+    </div>
+</div>
+
+<div class="row p-5 laptop">
+    <div class=" col">
+        <div class="p-3 shadow rounded-lg" style="width: 90%;height: 92%; background-color: #bdbdbdb3;">
+          <img src="{{url_for('static', filename='/images/grapes.webp')}}" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Grape</p></center>
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-3 shadow rounded-lg" style="width: 90%;height: 92%; background-color: #bdbdbdb3;">
+
+          <img src="{{url_for('static', filename='/images/orange.jpg')}} " width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Orange</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 shadow rounded-lg" style="width: 90%;height: 92%; background-color: #bdbdbdb3;">
+
+          <img src="{{url_for('static', filename='/images/peach.webp')}} "width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Peach</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 shadow rounded-lg" style="width: 90%;height: 92%; background-color: #bdbdbdb3;">
+
+          <img src="{{url_for('static', filename='/images/Bell_Peppers.jpg')}} " width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Pepper Bell</p></center>
+        </div>
+    </div>
+</div>
+
+
+<div class="row p-5 laptop">
+    <div class=" col">
+        <div class="p-3 shadow rounded-lg" style="width: 90%;height: 92%; background-color: #bdbdbdb3;">
+          <img src="{{url_for('static', filename='/images/potato.jpg')}} " width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Potato</p></center>
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-3 shadow rounded-lg" style="width: 90%;height: 92%; background-color: #bdbdbdb3;">
+
+          <img src="{{url_for('static', filename='/images/raspberries.webp')}} " width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Raspberry</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 shadow rounded-lg" style="width: 90%;height: 92%; background-color: #bdbdbdb3; ">
+
+          <img src="{{url_for('static', filename='/images/soyabean.jpg')}} " width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Soybean</p></center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 shadow rounded-lg" style="width: 90%;height: 92%; background-color: #bdbdbdb3;">
+
+          <img src="{{url_for('static', filename='/images/squash.webp')}} " width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Squash</p></center>
+        </div>
+    </div>
+</div>
+
+<center class="laptop">
+<div class="row p-5">
+    <div class=" col">
+        <div class="p-3 shadow rounded-lg" style="width: 45%;height: 92%; background-color: #bdbdbdb3;">
+          <img src="{{url_for('static', filename='/images/strawberry.avif')}} " width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Strawberry</p></center>
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-3 shadow rounded-lg" style="width: 45%;height: 92%; background-color: #bdbdbdb3;">
+
+          <img src="{{url_for('static', filename='/images/tomatoes.jpg')}}" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Tomato</p></center>
+        </div>
+    </div>
+</div>
+</center>
+
+{% endblock body %}
